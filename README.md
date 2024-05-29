@@ -9,6 +9,7 @@ This repository contains the code and data to reproduce the results in our work:
 You are required to install 
 - phiflow https://github.com/tum-pbs/PhiFlow
 - gymnasium 
+- stable_baselines3 https://stable-baselines3.readthedocs.io/en/master/guide/install.html
 
 # Learning for PDEs in smart buildings
 ```python
