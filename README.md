@@ -23,6 +23,7 @@ python learn_synthetic.py # for synthetic experiment
 cd control
 python train_diffpde.py # our approach
 python train_rl.py # reinforcement learning 
+ODE_control.ipynb -- ODE approach
 ```
 
 
