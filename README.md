@@ -1,6 +1,6 @@
 # PDE-HVAC-control
 
-This repository contains the code and data to reproduce the results in our work: **Ventilation and Temperature Control for Energy-efficient and Healthy Buildings: A Differentiable PDE Approach**, which has been accepted by Applied Energy.  
+This repository contains the code and data to reproduce the results in our work: **Ventilation and Temperature Control for Energy-efficient and Healthy Buildings: A Differentiable PDE Approach**, which has been accepted by Applied Energy.  You can get access to it via this [link](https://www.sciencedirect.com/science/article/abs/pii/S0306261924008602).
 ![Our framework](./image/figure1.png)
 
 
@@ -23,6 +23,7 @@ python learn_synthetic.py # for synthetic experiment
 cd control
 python train_diffpde.py # our approach
 python train_rl.py # reinforcement learning 
+ODE_control.ipynb -- ODE approach
 ```
 
 
