@@ -20,7 +20,7 @@ c = args.c
 torch.manual_seed(0)
 
 def dataset():
-    data = io.loadmat('data/1HourCycle0929.mat') # 30minCycle0828.mat
+    data = io.loadmat('data/1HourCycle0929.mat') 
     s = 1793-60*5 + 3600
     x = list(range(s, s+195*60)) # train on this sequence
     d_return = (data['return_ori'][x][::60] - 400) / 100.

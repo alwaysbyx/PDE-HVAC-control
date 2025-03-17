@@ -135,10 +135,13 @@ class EnvPDE:
           self.hvac_pos = self.temp.with_values(lambda x, y: (y>=2.6)*(x<=3.3)*(x>=2.7))
           self.outside = self.temp.with_values(lambda x, y: (x>=4.1)*(y<=2.7)*(y>=0))
         self.airflow_pos = self.v.with_values(lambda x, y: vec(x=0, y=y>=2.65))
-        self.ob1 = Obstacle(Box(x=(1.5, 2.7), y=(2.69, 2.7)), velocity=[0., 0], angular_velocity=tensor(0,)) #TODO
+        self.ob1 = Obstacle(Box(x=(1.5, 2.7), y=(2.69, 2.7)), velocity=[0., 0], angular_velocity=tensor(0,)) 
         self.ob2 = Obstacle(Box(x=(0, 0.9), y=(2.69, 2.7)), velocity=[0., 0], angular_velocity=tensor(0,))
         self.ob3 = Obstacle(Box(x=(3.3, 4.2), y=(2.69, 2.7)), velocity=[0., 0], angular_velocity=tensor(0,))
         self.p = None
         self.Pocoeff = [0] * 5 + [2.0] * 20 + [0] * 10 + [3.0] * 20 + [0] * 5
         self.temp_out = 21.0 * np.ones(60)
         self.t = 0
+
+
+

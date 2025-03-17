@@ -86,7 +86,7 @@ def train_airflow_rate(u, max_epoch):
     
     
 def train_airflow_temp(max_epoch=30):
-    u = np.load(f'data/result_u1_epoch{max_epoch-1}.npz')["u"]
+    u = np.load(f'data/result_u1_epoch{max_epoch-1}.npz')["u"] # load your trained data since we first train airflow rate then train temperature
     u_air_t = 21.0 * np.ones(360)
     lr = 0.1
     for epoch in range(max_epoch):
